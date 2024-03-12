@@ -10,6 +10,9 @@ Welcome to the Ride Management System (RMS) README! This project aims to streaml
 - Fair Calculation: Fair calculation considers various factors such as distance traveled, fuel type, driver experience, vehicle features, and customer rankings.
 - Dynamic Program Execution: The program accommodates up to 15 Customers, 10 Drivers, and 20 Vehicles, providing a user-driven menu with diverse functionalities.
 
+![Screenshot (87)](https://github.com/Usman554433/Ride-Management-System/assets/129150855/bdd381b7-c1f9-4461-aeae-97d6253e74bd)
+
+
 ## Functionality Overview:
 - Add and Remove Entities: Users can add new customers, drivers, or vehicles, and also remove drivers from the system.
 - Print Information: The system offers options to print lists of customers, drivers, and vehicles, along with their details and service histories.
