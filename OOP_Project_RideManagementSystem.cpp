@@ -801,9 +801,9 @@ int Person::getterNID()
 ostream& operator<<(ostream& out, const Person& P)
 {
 	out << "Name is: " << P.pName;
-	out << "DOB is: " << P.DOB ;
+	out << "DOB is: " << P.DOB;
 	out << "Age is: " << P.age << endl;
-	out << "NID is: " << P.Nid <<endl;
+	out << "NID is: " << P.Nid << endl;
 	return out;
 }
 
@@ -859,8 +859,8 @@ Service** Customer::getterBookinghistory()
 ostream& operator<<(ostream& out, const Customer& C)
 {
 	Person obj = C;
-	out << obj ;
-	out << "CID is " <<C.cID << endl<<endl;
+	out << obj;
+	out << "CID is " << C.cID << endl << endl;
 	return out;
 }
 
@@ -872,6 +872,7 @@ class Driver : public Person
 {
 private:
 	int dID;
+	int cID;
 	char** LiscenseList;
 	int noOfLiscences;
 	float overAllRanking;
@@ -884,6 +885,7 @@ private:
 public:
 	Driver(Name, Date, int, int, int, char**, int, float, float, int, int, Service**);
 	void setterDID(int);
+	void setterCID(int);
 	void setterLiscencelist(char**);
 	void setterNooliscences(int);
 	void setterOverallranking(float);
@@ -920,6 +922,11 @@ Driver::Driver(Name a = 0, Date b = 0, int c = 0, int d = 0, int e = 0, char** f
 void Driver::setterDID(int did)
 {
 	dID = did;
+}
+
+void Driver::setterCID(int cid)
+{
+	cID = cid;
 }
 
 void Driver::setterLiscencelist(char**)
@@ -1513,7 +1520,7 @@ void TMS::takeCustomers()
 	while (!obj.eof())
 	{
 		obj.getline(fn, 15, ',');
-		if (!strcmp(fn,""))
+		if (!strcmp(fn, ""))
 			break;
 		obj.getline(ln, 15, ',');
 		Name N(fn, ln);
@@ -1527,11 +1534,11 @@ void TMS::takeCustomers()
 		obj >> y;
 		Date D(d, m, y);
 		Customers[noOfCustomers].setterDOB(D);
-	
+
 		obj.ignore();
 		obj >> age;
 		Customers[noOfCustomers].setterAge(age);
-	
+
 		obj.ignore();
 		obj >> nid;
 		Customers[noOfCustomers].setterNID(nid);
@@ -1914,15 +1921,15 @@ TMS::~TMS()
 int main()
 {
 	TMS OBJ;
+	int choice = 0;
 	OBJ.takeCustomers();
-	for (int i = 0; i < 2; i++)
+	while (choice!=21)
 	{
 
 
-		cout << " WELCOME TO USMAN'S RIDE MANAGEMENT SYSTEM " << endl;
-		cout << endl << "Choose An Option From The Following Menu: " << endl;
+		cout << "============================ WELCOME TO USMAN'S RIDE MANAGEMENT SYSTEM ============================ " << endl;
+		cout << endl << "---------------------------- Choose An Option From The Following Menu ---------------------------- " << endl;
 		cout << endl;
-		int choice;
 		cout << "1. Add a new Customer" << endl;
 		cout << "2. Add or remove a Driver" << endl;
 		cout << "3. Add or remove a Vehicle" << endl;
@@ -1943,6 +1950,7 @@ int main()
 		cout << "18. Print details of all pending services on a particular date." << endl;
 		cout << "19. Print details of all pending services of a particular driver." << endl;
 		cout << "20. Print details of all canceled services by a customer." << endl;
+		cout << "21. Exit";
 		cout << endl << "Enter Choice: ";
 		cin >> choice;
 
@@ -2027,6 +2035,9 @@ int main()
 		case 20:
 			cout << "PRINT DETAILS OF CANCELLED SERVICES BY CUSTOMER:" << endl;
 			OBJ.printDetailsCancelledService();
+			break;
+		case 21:
+			cout << "============================ THANKYOU FOR CHOSING USMAN'S RIDE MANAGEMENT SYSTEM ============================ " << endl;
 			break;
 		default:
 			cout << "Enter A Valid Choice (1-20)" << endl;
