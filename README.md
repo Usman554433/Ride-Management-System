@@ -9,14 +9,17 @@ Welcome to the Ride Management System (RMS) README! This project aims to streaml
 - Rating System: Customers can rate both drivers and vehicles on a scale of 0 to 5, influencing overall rankings and bonuses for exceptional drivers.
 - Fair Calculation: Fair calculation considers various factors such as distance traveled, fuel type, driver experience, vehicle features, and customer rankings.
 - Dynamic Program Execution: The program accommodates up to 15 Customers, 10 Drivers, and 20 Vehicles, providing a user-driven menu with diverse functionalities.
-
-![Screenshot (87)](https://github.com/Usman554433/Ride-Management-System/assets/129150855/bdd381b7-c1f9-4461-aeae-97d6253e74bd)
+- ![Screenshot (87)](https://github.com/Usman554433/Ride-Management-System/assets/129150855/bdd381b7-c1f9-4461-aeae-97d6253e74bd)
 
 
 ## Functionality Overview:
 - Add and Remove Entities: Users can add new customers, drivers, or vehicles, and also remove drivers from the system.
+- ![Screenshot 2024-03-12 231430](https://github.com/Usman554433/Ride-Management-System/assets/129150855/a9e7e3f7-85af-455c-b881-950008aadba9)
+
 - Print Information: The system offers options to print lists of customers, drivers, and vehicles, along with their details and service histories.
-Service Requests: Users can request ride or delivery services, selecting from available vehicles and drivers based on their rankings.
+- ![Screenshot 2024-03-12 231457](https://github.com/Usman554433/Ride-Management-System/assets/129150855/bf3843ca-853d-4634-a391-356f9827b3d6)
+
+- Service Requests: Users can request ride or delivery services, selecting from available vehicles and drivers based on their rankings.
 - Cancellation Handling: If a customer cancels a booking, a cancellation charge is applied, and the system updates driver and vehicle statuses accordingly.
 - Service Completion: Upon completing a service, the system updates customer, driver, and vehicle records, allowing customers to rank the driver and vehicle.
 - Data Management: The main program includes functionalities to read and update data for services, vehicles, drivers, and customers using separate files as a database.
