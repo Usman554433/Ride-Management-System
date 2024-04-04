@@ -1,6 +1,6 @@
  # 🚗 Ride Management System (RMS) 🚚
 
-Welcome to the Ride Management System (RMS) README! This project aims to streamline the process of ride and transportation management for a vehicle rental company. Below are the key features and functionalities encapsulated within this system:a
+Welcome to the Ride Management System (RMS) README! This project aims to streamline the process of ride and transportation management for a vehicle rental company. Below are the key features and functionalities encapsulated within this system:aa
 
 ## Features:
 - Vehicle Categories: The system categorizes vehicles into three main types: ride vehicles, transportation vehicles, and vehicles suitable for both services.
